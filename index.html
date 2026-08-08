@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工研院智慧機械科技中心 - 智慧機械系統解決方案</title>
+    <style>
+        :root {
+            --primary-color: #0088d2;
+            --secondary-color: #7ab800;
+            --dark-color: #333333;
+            --light-color: #f4f6f9;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Microsoft JhengHei", sans-serif; }
+        body { line-height: 1.6; color: var(--dark-color); background-color: var(--light-color); }
+        
+        /* Header & Nav */
+        header { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 1rem; }
+        .logo { font-size: 1.2rem; font-weight: bold; color: var(--primary-color); }
+        .nav-links { display: flex; list-style: none; gap: 1.5rem; }
+        .nav-links a { text-decoration: none; color: var(--dark-color); font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: var(--primary-color); }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, var(--primary-color), #004b87); color: #fff; padding: 4rem 2rem; text-align: center; }
+        .hero h1 { font-size: 2.2rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.1rem; max-width: 800px; margin: 0 auto 2rem; opacity: 0.9; }
+        .btn { background: var(--secondary-color); color: #fff; padding: 0.8rem 2rem; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; text-decoration: none; display: inline-block; }
+        .btn:hover { background: #689c00; }
+
+        /* Content Sections / Tabs */
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+        .section-title { text-align: center; margin-bottom: 2rem; color: var(--primary-color); }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .card { background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--primary-color); }
+        .card h3 { color: var(--primary-color); margin-bottom: 0.8rem; }
+        .card ul { padding-left: 1.2rem; margin-top: 0.5rem; }
+
+        /* Table Style */
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; background: #fff; }
+        th, td { border: 1px solid #ddd; padding: 0.8rem; text-align: left; }
+        th { background-color: var(--primary-color); color: white; }
+
+        /* Footer */
+        footer { background: var(--dark-color); color: #fff; text-align: center; padding: 2rem 1rem; margin-top: 3rem; }
+        footer p { margin-bottom: 0.5rem; opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">ITRI 工研院智慧機械科技中心</div>
+            <ul class="nav-links">
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#components">關鍵模組</a></li>
+                <li><a href="#controllers">智能控制</a></li>
+                <li><a href="#apps">加值軟體</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>一站式解決智慧機械軟硬體整合</h1>
+        <p>從設計、製造到應用之 Total Solution。提供自主關鍵模組、開放式智能控制器與機聯網 AI 軟體，協助產業建立國產韌性供應鏈。</p>
+        <a href="#contact" class="btn">立即技術合作諮詢</a>
+    </section>
+
+    <div class="container">
+        <!-- 關鍵模組 -->
+        <section id="components" style="padding-top: 4rem;">
+            <h2 class="section-title">國產關鍵模組與機械設計</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>高響應主軸驅動器</h3>
+                    <p>具 EtherCAT 全數位通訊介面，通過 MIL-STD-810G 耐久測試。價格僅進口模組 1/3。</p>
+                    <ul>
+                        <li>加速度 0-4500rpm 僅 2.858 秒</li>
+                        <li>提升 20% 重切削能力</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>液靜壓旋盤</h3>
+                    <p>高剛性與高阻尼兼備之國產模組，最大負載可達 1,500 公斤。</p>
+                    <ul>
+                        <li>極佳振動抑制效果</li>
+                        <li>適用磨床、大型立車、立式磨床</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>高精度兩軸旋轉主軸頭</h3>
+                    <p>五軸同動加工真圓度誤差 < 10µm，適用航太等級加工標準 (NAS979)。</p>
+                    <ul>
+                        <li>傾斜軸旋轉偏置誤差 ≤ 4µm</li>
+                        <li>定位精度 < ±2.5 秒</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 智能控制 -->
+        <section id="controllers" style="padding-top: 4rem;">
+            <h2 class="section-title">開放式智能控制器與系統整合</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>控制器類型</th>
+                        <th>核心優勢與效益</th>
+                        <th>重點技術特色</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>五軸加工中心控制器</strong></td>
+                        <td>節省控制器成本 50%，交期縮短至 2 個月</td>
+                        <td>EtherCAT 最多 156 站、內建 10 分鐘機上旋轉誤差量測</td>
+                    </tr>
+                    <tr>
+                        <td><strong>車銑複合控制器</strong></td>
+                        <td>開放式控制平台，可支援多軸多系統</td>
+                        <td>相容 FANUC 碼、奈米平滑控制、線上 NURBS 插值</td>
+                    </tr>
+                    <tr>
+                        <td><strong>EDM 放電加工控制器</strong></td>
+                        <td>加工速度提高 30%</td>
+                        <td>18m/min 高速跳躍排渣、客製化放電專家系統</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 加值軟體 -->
+        <section id="apps" style="padding-top: 4rem;">
+            <h2 class="section-title">單機與遠端智能化加值 APP</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>斷屑車削 APP</h3>
+                    <p>解決自動化產線纏屑痛點，免去 15~20 萬高壓出水設備支出，大幅提升稼動率。</p>
+                </div>
+                <div class="card">
+                    <h3>體積空間精度補償</h3>
+                    <p>1 小時內完成整機 18 項關鍵精度量測，智能化補償 37 項變異，空間誤差 ≤ 20µm。</p>
+                </div>
+                <div class="card">
+                    <h3>設備能源監控與碳排預測</h3>
+                    <p>免去一機一電表高成本，結合 AI 建立碳排預測模型，自動產出單一工件碳履歷 (CBAM/IATF16949)。</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 聯絡我們 -->
+    <footer id="contact">
+        <h2>攜手產業新革命．擘劃智慧機械大未來</h2>
+        <p style="margin-top: 1rem;">工業技術研究院 智慧機械科技中心</p>
+        <p>台中辦公室：台中市台中工業區38路191號 | TEL: 04-2358-3993</p>
+        <p>中創園區：南投縣南投市文獻路2號 | TEL: 049-234-5658</p>
+        <p style="font-size: 0.8rem; margin-top: 1rem; color: #aaa;">&copy; ITRI Industrial Technology Research Institute. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
